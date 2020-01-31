@@ -42,7 +42,7 @@ public static void Main(string[] args)
                 ec.ConfigureConsumers(container);
 
                 // configure consumer by type
-                ec.ConfigureConsumer(typeof(ConsumerOne), container);
+                ec.ConfigureConsumer(container, typeof(ConsumerOne));
             });
 
             // or, configure the endpoints by convention
